@@ -1,4 +1,18 @@
 # Memory's Windows Installation Media Utility 🧰
+
+## 📦 Project Archived
+
+**This repository is archived and no longer maintained as of November 2025.**
+
+**Why?** WIMUtil has been successfully integrated into my larger project, [**Winhance**](https://github.com/memstechtips/Winhance). Rather than maintain two separate projects, I've decided to focus development efforts on Winhance, which includes all of WIMUtil's functionality and much more.
+
+**What should you use?** For Windows installation media customization, please use:
+👉 **[Winhance](https://github.com/memstechtips/Winhance)** - Actively maintained, more features, better support
+
+**Can I still use WIMUtil?** Yes! This repository remains available for anyone who needs this specific version, but it will not receive updates or bug fixes.
+
+---
+
 The **Windows Installation Media Utility** (*not .WIM - Windows Imaging Format Utility*) is a simple tool designed to help optimize and customize Windows Installation Media, streamlining your Windows installs.
 
 Contributions to this project are welcome! However, please understand that I prefer to develop and work on these projects independently. I do value other people's insights and appreciate any feedback, so don't take it personally if a pull request is not accepted.
@@ -36,7 +50,9 @@ If you have feedback, suggestions, or need help with WIMUtil, please join the di
 
 ## Usage Instructions 📜
 
-To use **WIMUtil**, follow these steps to launch PowerShell as an Administrator and run the installation script:
+> **Note:** For new projects, please use [Winhance](https://github.com/memstechtips/Winhance) instead.
+
+For those who specifically need this archived version, follow these steps to launch PowerShell as an Administrator and run the installation script:
 
 1. **Open PowerShell as Administrator:**
    - **Windows 10/11**: Right-click on the **Start** button and select **Windows PowerShell (Admin)** or **Windows Terminal (Admin)**. </br> PowerShell will open in a new window.
