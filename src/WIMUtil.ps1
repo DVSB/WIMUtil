@@ -37,14 +37,14 @@ $script:currentScreenIndex = 1
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Internet Explorer\Main" -Name "DisableFirstRunCustomize" -Value 2 -Force
 
 # Explicitly define the configuration URL for the branch to use (commenting out the one not to use depending on branch)
-$configUrl = "https://raw.githubusercontent.com/memstechtips/WIMUtil/main/config/wimutil-settings.json"  # Main branch
-# $configUrl = "https://raw.githubusercontent.com/memstechtips/WIMUtil/dev/config/wimutil-settings.json"   # Dev branch
+$configUrl = "https://raw.githubusercontent.com/DVSB/WIMUtil/main/config/wimutil-settings.json"  # Main branch
+# $configUrl = "https://raw.githubusercontent.com/DVSB/WIMUtil/dev/config/wimutil-settings.json"   # Dev branch
 
 Write-Host "Using Configuration URL: $configUrl" -ForegroundColor Cyan
 
 # Determine branch from the configuration URL
 $currentBranch = "unknown"  # Fallback value
-if ($configUrl -match "https://raw.githubusercontent.com/memstechtips/WIMUtil/([^/]+)/config/wimutil-settings.json") {
+if ($configUrl -match "https://raw.githubusercontent.com/DVSB/WIMUtil/([^/]+)/config/wimutil-settings.json") {
     $currentBranch = $matches[1]
     Write-Host "Branch detected from Configuration URL: $currentBranch" -ForegroundColor Green
 }
@@ -510,7 +510,7 @@ if ($readerOperationSuccessful) {
         SetStatusText -message "Downloading the latest UnattendedWinstall XML file..." -color $Script:SuccessColor -textBlock ([ref]$AddXMLStatusText)
         RefreshGUI
     
-        $url = "https://github.com/memstechtips/UnattendedWinstall/raw/main/autounattend.xml"
+        $url = "https://github.com/DVSB/UnattendedWinstall/raw/main/autounattend.xml"
         $destination = Join-Path -Path $Script:WorkingDirectory -ChildPath "autounattend.xml"
     
         try {
@@ -1181,4 +1181,5 @@ else {
     Write-Host "Failed to load the XAML file. Exiting script." -ForegroundColor Red
     Pause
     exit 1
+
 }
